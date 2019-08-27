@@ -142,6 +142,9 @@
     h4{
       text-transform: uppercase;
       font-size: 24px;
+      @include custom-breakpoint(xmedium-down){
+        font-size: 18px;
+      }
     }
 
   }
@@ -151,6 +154,10 @@
       text-transform: uppercase;
       margin-bottom: 0;
       margin-top: 4px;
+      @include custom-breakpoint(xmedium-down){
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
     }
   }
   .link-list{
@@ -159,6 +166,12 @@
        display: inline-block;
        padding: 0 30px;
        font-size: 15px;
+       @include custom-breakpoint(xmedium-down){
+         padding-left: 0;
+         padding-right: 15px;
+         padding-top: 20px;
+         font-size: 14px;
+       }
        &:first-child{
          padding-left: 0;
        }

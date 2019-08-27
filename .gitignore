@@ -2,4 +2,7 @@
 bower_components
 node_modules
 npm-debug.log
-css
+.idea/workspace.xml
+.idea/*
+.idea*
+.idea
