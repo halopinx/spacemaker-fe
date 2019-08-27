@@ -1,0 +1,63 @@
+//General
+html, body{
+  overflow-x: hidden;
+}
+hr{
+  display: block;
+  height: 1px;
+  background-color: $light-gray;
+  border-bottom: 0;
+  margin: 80px 0;
+}
+strong{
+  font-weight: normal;
+  font-family: $font-bold;
+}
+li{
+  line-height: 1.5;
+}
+a{
+  transition: all 0.3s;
+}
+a[href^="tel:"]{
+  color: inherit;
+}
+small{
+  line-height: 1.5;
+  display: block;
+  font-size: 14px;
+  p{
+    line-height: 1.5;
+    display: block;
+    font-size: 12px;
+  }
+}
+
+//Buttons
+button{
+ outline: 0;
+ cursor: pointer;
+}
+
+//Forms
+select, input, textarea{
+  height: auto !important;
+  border: 0 !important;
+}
+select{
+  color: $font-color;
+}
+label{
+  color: $font-color;
+  display: inline-block;
+  margin: 0 5px;
+  input{
+    margin: 0 4px 0 0;
+  }
+}
+
+//Columns
+.column.region-item:last-child:not(:first-child),
+.columns.region-item:last-child:not(:first-child){
+  float: left;
+}

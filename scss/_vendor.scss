@@ -1,0 +1,52 @@
+//Slick
+.slick-slider{
+  .slick-arrow{
+    background-color: $primary-color;
+    font-size: 0;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    margin-top: -35px;
+    text-align: center;
+    &:after{
+      content: '\0041';
+      font-size: 40px;
+      font-family: 'Glyphter';
+      display: inline-block;
+      transform: rotate(-90deg);
+    }
+    &.slick-next{
+      right: 0;
+      margin-right: -35px;
+    }
+    &.slick-prev{
+      left: 0;
+      margin-left: -35px;
+      &:after{
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .slick-dots{
+    position: relative;
+    z-index: 9999;
+    li{
+      display: inline-block;
+      line-height: 1;
+      margin: 0 10px;
+      button{
+        font-size: 0;
+        width: 9px;
+        height: 9px;
+        background-color: $secondary-color;
+      }
+      &.slick-active{
+        button{
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+}

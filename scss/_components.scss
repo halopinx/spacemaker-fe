@@ -1,0 +1,217 @@
+//Menus
+.main-menu{
+  margin: 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    font-family: $font-medium;
+    font-size: 14px;
+    letter-spacing: -0.25px;
+    a{
+      position: relative;
+      padding: 15px 0;
+      margin: 0 20px;
+      display: block;
+      @include breakpoint(xlarge) {
+        margin: 0 30px;
+      }
+      &:before{
+        content: attr(title);
+        position: absolute;
+        top: 13px;
+        left: -12px;
+        font-size: 16px;
+        right: -12px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        letter-spacing: -0.65px;
+        opacity: 0;
+      }
+      &:after{
+        content: '';
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+    &:hover{
+      a{
+        &:after,  &:before{
+          opacity: 1;
+        }
+        span{
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+//Buttons
+.button{
+  font-family: $font-regular;
+  text-transform: uppercase;
+  position: relative;
+  color: $primary-color;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 5px;
+  background-color: transparent;
+  @include custom-breakpoint(xmedium-down){
+    font-size: 14px;
+  }
+  &:hover{
+    background-color: transparent;
+    color: $primary-color;
+  }
+  &:after{
+    content: '';
+    height: 3px;
+    background-color: $primary-color;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+  }
+  &.primary{
+    background-color: transparent;
+    color: $primary-color;
+    &:hover{
+      background-color: transparent;
+      color: $primary-color;
+    }
+  }
+  &.whole{
+    background-color: #fff;
+    color: $primary-color;
+    font-family: $font-bold;
+    padding: 15px 38px;
+    &:hover{
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+//Flexblock
+.flexblock{
+  padding: 65px 0 70px 0;
+  @include breakpoint(xmedium) {
+    padding: 75px 0 80px 0;
+  }
+  @include breakpoint(large) {
+    padding: 95px 0 100px 0;
+  }
+}
+
+
+//Lists
+.list-social{
+  margin: 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    a{
+      display: block;
+      background-color: $primary-color;
+      width: 45px;
+      height: 45px;
+      color: #fff;
+      text-align: center;
+      .icon{
+        font-size: 26px;
+        position: relative;
+        top: 6px;
+      }
+    }
+  }
+}
+
+//Slider
+.slider-carousel{
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 40px;
+  @include custom-breakpoint(large-down){
+    margin-bottom: 40px;
+  }
+  @include breakpoint(xlarge) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .slick-list{
+    overflow: visible;
+  }
+  .slick-prev{
+    display: none !important;
+  }
+  .slick-next{
+    @include custom-breakpoint(large-down){
+      display: none !important;
+    }
+  }
+  .slick-dots{
+    margin: 30px auto;
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    @include breakpoint(large) {
+      margin-left: 295px;
+      margin-bottom: 0;
+      bottom: -45px;
+    }
+  }
+  .slider-item{
+    text-align: center;
+    outline: none;
+    .image{
+      display: none;
+      @include breakpoint(large) {
+        position: absolute;
+        width: 328px;
+        bottom: -45px;
+        left: -45px;
+        display: block;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .content{
+      font-size: 20px;
+      padding: 40px 30px;
+      @include breakpoint(large) {
+        padding: 60px 60px 40px 320px;
+      }
+      @include breakpoint(xlarge) {
+        padding: 60px 130px 40px 400px;
+      }
+      p{
+        @include custom-breakpoint(xmedium-down){
+          font-size: 16px;
+          line-height: 32px;
+        }
+      }
+      .icon{
+        font-size: 54px;
+        line-height: 1;
+        margin-bottom: 40px;
+      }
+      .button{
+        font-size: 16px;
+        @include breakpoint(large) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

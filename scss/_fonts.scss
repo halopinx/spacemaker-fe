@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Dinot Bold';
+  src: url('DINOT-Bold.eot');
+  src: url('#{$base-url}/fonts/dinot/DINOT-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$base-url}/fonts/dinot/DINOT-Bold.woff2') format('woff2'),
+  url('#{$base-url}/fonts/dinot/DINOT-Bold.woff') format('woff'),
+  url('#{$base-url}/fonts/dinot/DINOT-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dinot Medium';
+  src: url('#{$base-url}/fonts/dinot/DINOT-Medium.eot');
+  src: url('#{$base-url}/fonts/dinot/DINOT-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$base-url}/fonts/dinot/DINOT-Medium.woff2') format('woff2'),
+  url('#{$base-url}/fonts/dinot/DINOT-Medium.woff') format('woff'),
+  url('#{$base-url}/fonts/dinot/DINOT-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dinot Light';
+  src: url('#{$base-url}/fonts/dinot/DINOT-Light.eot');
+  src: url('#{$base-url}/fonts/dinot/DINOT-Light.eot?#iefix') format('embedded-opentype'),
+  url('#{$base-url}/fonts/dinot/DINOT-Light.woff2') format('woff2'),
+  url('#{$base-url}/fonts/dinot/DINOT-Light.woff') format('woff'),
+  url('#{$base-url}/fonts/dinot/DINOT-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dinot Regular';
+  src: url('#{$base-url}/fonts/dinot/DINOT-Regular.eot');
+  src: url('#{$base-url}/fonts/dinot/DINOT-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$base-url}/fonts/dinot/DINOT-Regular.woff2') format('woff2'),
+  url('#{$base-url}/fonts/dinot/DINOT-Regular.woff') format('woff'),
+  url('#{$base-url}/fonts/dinot/DINOT-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dinot Black';
+  src: url('#{$base-url}/fonts/dinot/DINOT-Black.eot');
+  src: url('#{$base-url}/fonts/dinot/DINOT-Black.eot?#iefix') format('embedded-opentype'),
+  url('#{$base-url}/fonts/dinot/DINOT-Black.woff2') format('woff2'),
+  url('#{$base-url}/fonts/dinot/DINOT-Black.woff') format('woff'),
+  url('#{$base-url}/fonts/dinot/DINOT-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url('#{$base-url}/fonts/glyph/Glyphter.eot');
+  src: url('#{$base-url}/fonts/glyph/Glyphter.eot?#iefix') format('embedded-opentype'),
+  url('#{$base-url}/fonts/glyph/Glyphter.woff') format('woff'),
+  url('#{$base-url}/fonts/glyph/Glyphter.ttf') format('truetype'),
+  url('#{$base-url}/fonts/glyph/Glyphter.svg#Glyphter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,58 @@
+//Placeholder
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+// Browser prefixes
+@mixin prefixes($property, $val){
+  -webkit-#{$property}: $val;
+  -moz-#{$property}: $val;
+  -ms-#{$property}: $val;
+  -o-#{$property}: $val;
+  #{$property}: $val;
+}
+
+//Custom Breakpoint
+@mixin custom-breakpoint($class) {
+  @if $class == small-down {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $class == medium-down {
+    @media only screen and (max-width: 639px) { @content; }
+  }
+  @else if $class == xmedium-down {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+  @else if $class == large-down {
+    @media only screen and (max-width: 1023px) { @content; }
+  }
+  @else if $class == xlarge-down {
+    @media only screen and (max-width: 1199px) { @content; }
+  }
+  @else if $class == xxlarge-down {
+    @media only screen and (max-width: 1439px) { @content; }
+  }
+  @else if $class == xmedium-only {
+    @media only screen and (min-width: 768px) and (max-width: 1023px){ @content; }
+  }
+  @else if $class == tablet-portrait {
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: portrait)
+    and (-webkit-min-device-pixel-ratio: 1) { @content; }
+  }
+  @else if $class == tablet-landscape {
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (orientation: landscape)
+    and (-webkit-min-device-pixel-ratio: 1) { @content; }
+  }
+  @else {
+    @warn "No breakpoint mixin created";
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'DINOT';
+    src: url('DINOT-Bold.eot');
+    src: url('DINOT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('DINOT-Bold.woff2') format('woff2'),
+        url('DINOT-Bold.woff') format('woff'),
+        url('DINOT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINOT';
+    src: url('DINOT-Medium.eot');
+    src: url('DINOT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('DINOT-Medium.woff2') format('woff2'),
+        url('DINOT-Medium.woff') format('woff'),
+        url('DINOT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINOT';
+    src: url('DINOT-Light.eot');
+    src: url('DINOT-Light.eot?#iefix') format('embedded-opentype'),
+        url('DINOT-Light.woff2') format('woff2'),
+        url('DINOT-Light.woff') format('woff'),
+        url('DINOT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINOT';
+    src: url('DINOT-Regular.eot');
+    src: url('DINOT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DINOT-Regular.woff2') format('woff2'),
+        url('DINOT-Regular.woff') format('woff'),
+        url('DINOT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINOT';
+    src: url('DINOT-Black.eot');
+    src: url('DINOT-Black.eot?#iefix') format('embedded-opentype'),
+        url('DINOT-Black.woff2') format('woff2'),
+        url('DINOT-Black.woff') format('woff'),
+        url('DINOT-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
