@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="21px" viewBox="0 0 26 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1-Homepage-Copy-10" transform="translate(-274.000000, -23.000000)">
+            <g id="Group" transform="translate(274.000000, 23.000000)">
+                <path d="M0,18 L10,18 L10,21 L0,21 L0,18 Z M0,0 L26,0 L26,3 L0,3 L0,0 Z M0,9 L10,9 L10,12 L0,12 L0,9 Z" id="Rectangle-Copy-5" fill="#FFFFFF"></path>
+                <rect id="Rectangle-Copy-2" fill="#086492" transform="translate(18.625000, 14.611750) rotate(-45.000000) translate(-18.625000, -14.611750) " x="13.625" y="13.1117496" width="10" height="3"></rect>
+                <rect id="Rectangle-Copy-3" fill="#086492" transform="translate(18.625000, 14.611750) rotate(-315.000000) translate(-18.625000, -14.611750) " x="13.625" y="13.1117496" width="10" height="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

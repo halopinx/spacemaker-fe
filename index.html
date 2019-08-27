@@ -13,13 +13,22 @@
        <div class="wrapper">
            <div class="main-header-holder">
                <div class="main-logo"><a href="index.html"><img src="images/spacemaker-logo-white@2x.png" width="214"></a></div>
-               <ul class="main-menu">
-                   <li><a title="Home Extensions & Renovations"><span>Home Extensions & Renovations</span></a></li>
-                   <li><a title="Custom New Homes"><span>Custom New Homes</span></a></li>
-                   <li><a title="Working With Us"><span>Working With Us</span></a></li>
-                   <li><a title="Portfolio"><span>Portfolio</span></a></li>
-                   <li><a title="Contact Us"><span>Contact Us</span></a></li>
-               </ul>
+               <span id="button-mobile-menu" class="button-mobile-menu hide-for-large"></span>
+               <div class="main-menu-wrapper">
+                   <ul class="main-menu">
+                       <li><a title="Home Extensions & Renovations"><span>Home Extensions & Renovations</span></a></li>
+                       <li><a title="Custom New Homes"><span>Custom New Homes</span></a></li>
+                       <li><a title="Working With Us"><span>Working With Us</span></a></li>
+                       <li><a title="Portfolio"><span>Portfolio</span></a></li>
+                       <li><a title="Contact Us"><span>Contact Us</span></a></li>
+                   </ul>
+                   <div class="hide-for-large">
+                       <div class="cta">
+                           <span>Call Us</span>
+                           <span><a href="tel:03 9896 3200">03 9896 3200</a></span>
+                       </div>
+                   </div>
+               </div>
            </div>
        </div>
     </header>
@@ -115,15 +124,14 @@
             </div>
         </div>
         <div class="flexblock bg-primary no-padding">
-            <div class="banner-post" style="background-image: url('images/banner-post-bg.jpg')">
+            <div class="banner-post banner-switch" data-banner-large="images/banner-post-bg.jpg" data-banner-small="images/banner-post-bg-small.jpg" style="background-image: url('images/banner-post-bg.jpg')">
                 <div class="row column">
                     <div class="banner-content">
                         <div class="item icon-item"><img src="images/50-year-stamp@2x.png" width="182"></div>
                         <div class="item content-item">
                             <div class="cta-text">
-                                50 YEAR ANNIVERSARY GIVEAWAY <br>
+                                <p>50 YEAR ANNIVERSARY GIVEAWAY</p>
                                 <h3>WIN A $5,000 HOLIDAY</h3>
-                                50 YEAR ANNIVERSARY GIVEAWAY
                             </div>
                         </div>
                         <div class="item button-item">
@@ -142,7 +150,7 @@
                             <p>Our award-winning projects have been judged for excellence and innovation in design, construction and value for money both in Victoria and on the national stage.
                             </p>
                         </div>
-                        <div class="more"><a class="button primary">View All Awards</a></div>
+                        <div class="more show-for-large"><a class="button primary">View All Awards</a></div>
                     </div>
                 </div>
                 <div class="large-5 column">
@@ -193,6 +201,7 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="more hide-for-large"><a class="button primary">View All Awards</a></div>
                 </div>
             </div>
         </div>
