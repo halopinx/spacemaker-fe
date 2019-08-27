@@ -173,14 +173,21 @@
   background-position: center right;
   background-size: cover;
   background-color: $primary-color;
+  position: relative;
+  overflow: hidden;
   @include breakpoint(xxlarge) {
     background-size: contain;
+  }
+  @include custom-breakpoint(large-down){
+    background-image: none !important;
   }
   .banner-content{
     display: table;
     width: 100%;
     padding: 50px 0 100px 0;
     text-align: center;
+    position: relative;
+    z-index: 1;
     @include breakpoint(xxlarge) {
       padding: 30px 0;
     }
@@ -245,6 +252,15 @@
           display: table-cell;
         }
       }
+    }
+  }
+  .banner-mobile{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    img{
+      width: 100%;
     }
   }
 }
