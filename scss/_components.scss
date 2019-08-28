@@ -146,12 +146,16 @@
   margin-bottom: 20px;
   margin-left: 60px;
   margin-right: 40px;
+  @include breakpoint(xlarge) {
+    margin-left: 0;
+    margin-right: 0;
+  }
   @include custom-breakpoint(large-down){
     margin-bottom: 40px;
     margin-left: 30px;
     margin-right: 30px;
   }
-  @include breakpoint(xlarge) {
+  @include custom-breakpoint(medium-down){
     margin-left: 0;
     margin-right: 0;
   }
@@ -167,16 +171,18 @@
     }
   }
   .slick-dots{
-    margin: 30px auto;
     position: absolute !important;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 100%;
     @include breakpoint(large) {
       margin-left: 295px;
       margin-bottom: 0;
       bottom: -45px;
+    }
+    @include custom-breakpoint(large-down){
+      margin: 30px auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      width: 100%;
     }
   }
   .slider-item{

@@ -270,6 +270,9 @@
          padding-top: 20px;
          font-size: 14px;
        }
+       @include custom-breakpoint(medium-down){
+         padding-right: 10px;
+       }
        &:first-child{
          padding-left: 0;
        }
@@ -301,6 +304,9 @@
         }
         a{
           margin-right: 30px;
+          @include custom-breakpoint(medium-down){
+            margin-right: 10px;
+          }
         }
       }
     }

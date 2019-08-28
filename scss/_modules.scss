@@ -259,6 +259,12 @@
     bottom: 0;
     left: 0;
     right: 0;
+    @include breakpoint(medium) {
+      bottom: -100px;
+    }
+    @include breakpoint(xmedium) {
+      bottom: -200px;
+    }
     img{
       width: 100%;
     }
