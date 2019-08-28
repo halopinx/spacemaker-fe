@@ -134,10 +134,9 @@
 #site-hero-banner{
   position: relative;
   height: 100vh;
-
   .show-menu & {
     @include prefixes(filter, blur(10px));
-    transition: filter 0.75s 0.5s;
+    transition-delay: 0.5s;
   }
   &:before{
     content: '';
@@ -243,6 +242,7 @@
 #site-content{
   .show-menu & {
     @include prefixes(filter, blur(10px));
+    transition-delay: 0.5s;
   }
   .top-page{
     padding-top: 30px;

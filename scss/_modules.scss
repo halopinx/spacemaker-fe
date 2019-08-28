@@ -379,6 +379,7 @@
   .image{
     img{
       width: 100%;
+      transition: transform 0.5s;
     }
   }
   .title{
@@ -406,19 +407,49 @@
       }
     }
   }
+  &:hover{
+    .image{
+      img{
+         transform: scale(1.15);
+         transition: transform 0.75s;
+      }
+    }
+  }
 }
 
 .post-box-quote{
   font-size: 24px;
   text-align: center;
   background-color: $secondary-color;
+  .column & {
+    @include custom-breakpoint(xmedium-down){
+      margin-left: -.9375rem;
+      width: calc(100% + 1.875rem) !important;
+    }
+  }
+  &.sh{
+    display: table;
+    width: 100%;
+    .content{
+       display: table-cell;
+       vertical-align: middle;
+    }
+  }
   .content{
-    margin: 30px;
     background-color: #fff;
-    padding-top: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
-    max-width: 600px;
+    padding: 40px 60px;
+    border: 30px $secondary-color solid;
+    @include custom-breakpoint(xmedium-down){
+      padding: 20px 25px;
+      font-size: 16px;
+      border-left-width: 15px;
+      border-right-width: 15px;
+      border-top-width: 45px;
+      border-bottom-width: 45px;
+      p{
+        line-height: 32px;
+      }
+    }
     &:before{
       content: '\0042';
       font-family: 'Glyphter';
@@ -428,7 +459,15 @@
     }
   }
   .more{
-    font-size: 16px;
+    .button{
+      font-size: 16px;
+    }
+    @include breakpoint(large) {
+      padding-top: 15px;
+    }
+    @include custom-breakpoint(xmedium-down){
+      padding-bottom: 30px;
+    }
   }
   &:after{
     display: none;
