@@ -5,11 +5,18 @@
   .main-header-holder{
     overflow: hidden;
     padding: 20px 0;
+    @include custom-breakpoint(large-down) {
+      padding: 0;
+    }
     .main-logo{
       float: left;
       margin-left: 15px;
+      @include custom-breakpoint(large-down){
+        margin-top: 12px;
+        margin-left: 20px;
+      }
       img{
-        @include custom-breakpoint(xmedium-down){
+        @include custom-breakpoint(large-down){
             width: 135px;
         }
       }
@@ -32,18 +39,34 @@
       }
     }
   }
+  .main-header-wrapper{
+    @include custom-breakpoint(large-down){
+       height: 70px;
+       position: relative;
+       background-color: $primary-color;
+       z-index: 99;
+    }
+  }
   .main-menu-wrapper{
     @include custom-breakpoint(large-down){
       position: absolute;
-      top: 0;
-      right: 0;
       left: 0;
-      bottom: 0;
+      right: 0;
+      height: 100vh;
+      overflow: auto;
+      padding-bottom: 70px;
+      top: 0;
+      margin-top: 70px;
+      transition: transform 1.25s;
+      transform: translate3d(0, -150%, 0);
+      background: rgba(0,0,0, 0.7);
       .show-menu & {
-        position: fixed;
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.75s;
       }
       .main-menu{
         float: none;
+        padding-top: 30px;
         li{
           display: block;
           text-align: center;
@@ -74,9 +97,9 @@
     height: 26px;
     display: block;
     position: absolute;
-    right: 30px;
+    right: 20px;
     top: 50%;
-    margin-top: -15px;
+    margin-top: -13px;
     z-index: 10;
     cursor: pointer;
     &:after, &:before{
