@@ -61,15 +61,14 @@
   overflow: hidden;
   height: 100vh;
   position: relative;
-  //@include prefixes(filter, blur(100px));
   #site-header, .main-menu-wrapper{
     z-index: 20;
   }
-  #site-hero-banner{
-    &:before, &:after{
-      display: none;
-    }
-  }
+  //#site-hero-banner{
+  //  &:before, &:after{
+  //    display: none;
+  //  }
+  //}
 }
 
 
@@ -85,6 +84,9 @@
   background-color: transparent;
   @include custom-breakpoint(xmedium-down){
     font-size: 14px;
+    .button-group & {
+      font-size: 14px;
+    }
   }
   &:hover{
     background-color: transparent;
