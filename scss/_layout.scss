@@ -2,6 +2,7 @@
 #site-header{
   position: relative;
   z-index: 1;
+  background-color: $primary-color;
   .main-header-holder{
     overflow: hidden;
     padding: 20px 0;
@@ -20,10 +21,15 @@
             width: 135px;
         }
       }
-
     }
     .main-menu{
       float: right;
+
+      li{
+        a{
+          color: #fff;
+        }
+      }
     }
   }
   &.homepage-site-header{
@@ -31,13 +37,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    .main-menu{
-      li{
-        a{
-          color: #fff;
-        }
-      }
-    }
   }
   .main-header-wrapper{
     @include custom-breakpoint(large-down){
@@ -244,6 +243,51 @@
 #site-content{
   .show-menu & {
     @include prefixes(filter, blur(10px));
+  }
+  .top-page{
+    padding-top: 30px;
+    position: relative;
+    @include breakpoint(xmedium) {
+      padding-top: 40px;
+    }
+    @include breakpoint(large) {
+      padding-top: 80px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 35%;
+      z-index: -1;
+      background-color: $secondary-color;
+      @include breakpoint(xmedium) {
+        bottom: 20%;
+      }
+      @include breakpoint(large) {
+         bottom: 100px;
+      }
+    }
+    h1{
+      line-height: 72px;
+      letter-spacing: 4px;
+      &:only-child{
+        margin-bottom: 50px;
+      }
+      @include custom-breakpoint(large-down){
+        font-size: 42px;
+        margin-bottom: 30px;
+        letter-spacing: 2.5px;
+        &:only-child{
+          margin-bottom: 30px;
+        }
+      }
+      @include custom-breakpoint(medium-down){
+        font-size: 36px;
+        line-height: 1;
+      }
+    }
   }
 }
 

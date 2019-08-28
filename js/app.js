@@ -22,4 +22,16 @@ $(function () {
         infinite: true
     });
 
+    //Same Height
+    $('.sh').matchHeight();
+
+    //Isotope
+    $('.isotope-holder').isotope({
+        itemSelector: '.post-box',
+        layoutMode: 'fitRows',
+        fitRows: {
+            gutter: 30
+        }
+    })
+
 })
