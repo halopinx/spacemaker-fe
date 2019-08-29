@@ -160,11 +160,45 @@
 }
 .block-post{
   margin-bottom: 30px;
+  .text-larger{
+     p{
+       font-size: 36px;
+       line-height: 50px;
+       letter-spacing: 1.5px;
+     }
+  }
   .more{
     @include breakpoint(large){
       margin-top: 60px;
     }
   }
+  .post-with-line-holder{
+     margin-top: 60px;
+  }
+}
+
+.block-image{
+  img{
+   width: 100%;
+  }
+  &.sh{
+    img{
+      height: inherit;
+      width: auto;
+    }
+  }
+}
+
+
+//Lists
+.home-details-list{
+   margin-left: 0;
+   list-style: none;
+   margin-bottom: 40px;
+   li{
+      display: block;
+      margin-bottom: 15px;
+   }
 }
 
 //Banner Post
@@ -275,9 +309,6 @@
 .featured-post{
   position: relative;
   overflow: hidden;
-  .top-page & {
-    margin-bottom: 50px;
-  }
   .image{
     @include custom-breakpoint(xmedium-down){
       display: none;
@@ -361,10 +392,13 @@
 
 
 //Post Box
+.post-box-holder{
+  margin-top: 30px;
+}
 .post-box{
   position: relative;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-top: 30px;
   &:after{
     content: '';
     height: 100%;
@@ -473,4 +507,97 @@
     display: none;
   }
 
+}
+
+
+//Post
+.post-with-line-holder{
+  border-bottom: 1px $primary-color solid;
+  padding-bottom: 20px;
+}
+.post-with-line{
+  border-top: 1px $primary-color solid;
+  padding-top: 40px;
+   h3{
+     font-size: 30px;
+     letter-spacing: 2.15px;
+   }
+   p{
+     line-height: 30px;
+     letter-spacing: 0.6px;
+   }
+}
+
+
+//Post - Quotes
+.quotes-post{
+  text-align: center;
+  outline: none;
+  position: relative;
+  .image{
+    display: none;
+    @include breakpoint(large) {
+      position: absolute;
+      width: 328px;
+      bottom: -45px;
+      left: -45px;
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .content{
+    font-size: 20px;
+    padding: 40px 30px;
+    background-color: #fff;
+    @include breakpoint(large) {
+      padding: 60px 60px 40px 320px;
+    }
+    @include breakpoint(xlarge) {
+      padding: 60px 80px 100px 360px;
+    }
+    p{
+      font-size: 24px;
+      line-height: 38px;
+      letter-spacing: 1px;
+      @include custom-breakpoint(xmedium-down){
+        font-size: 16px;
+        line-height: 32px;
+      }
+    }
+    .icon{
+      font-size: 54px;
+      line-height: 1;
+      margin-bottom: 40px;
+      @include custom-breakpoint(large-down){
+        margin-bottom: 30px;
+      }
+    }
+    .button{
+      font-size: 16px;
+      @include breakpoint(large) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+
+//Form - block
+.form-block{
+  h4{
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  .no-padding & {
+     padding: 40px 0 60px 0;
+     max-width: 870px;
+     margin: 0 auto;
+     .lined-input{
+       max-width: 670px;
+       margin: 0 auto;
+     }
+  }
 }

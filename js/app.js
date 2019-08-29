@@ -21,6 +21,11 @@ $(function () {
         dots: true,
         infinite: true
     });
+    $('.slider-image-carousel').slick({
+        fade: true,
+        dots: true,
+        infinite: true
+    });
 
     //Same Height
     $('.sh').matchHeight();

@@ -5,6 +5,13 @@
   background-position: center center;
 }
 
+//Icon CSS
+.icon-css-arrow{
+   display: inline-block;
+   border-top: 10px transparent solid;
+   border-left: 20px #fff solid;
+   border-bottom: 10px transparent solid;
+}
 
 //Icon Glyphs
 [class*='icon-']:before{

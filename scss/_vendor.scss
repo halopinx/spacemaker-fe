@@ -10,6 +10,7 @@
     top: 50%;
     margin-top: -35px;
     text-align: center;
+    z-index: 2;
     &:after{
       content: '\0041';
       font-size: 40px;
@@ -40,7 +41,7 @@
         font-size: 0;
         width: 9px;
         height: 9px;
-        background-color: $secondary-color;
+        background-color: #D0D2D3;
       }
       &.slick-active{
         button{

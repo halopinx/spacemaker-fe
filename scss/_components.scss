@@ -64,11 +64,6 @@
   #site-header, .main-menu-wrapper{
     z-index: 20;
   }
-  //#site-hero-banner{
-  //  &:before, &:after{
-  //    display: none;
-  //  }
-  //}
 }
 
 
@@ -120,6 +115,59 @@
     &:hover{
       background-color: $primary-color;
       color: #fff;
+    }
+  }
+}
+.media-button{
+  position: relative;
+  overflow: hidden;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.45);
+  }
+  .image{
+    img{
+      width: 100%;
+      transition: transform 0.5s;
+    }
+  }
+  .content{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    a{
+      color: #fff;
+      display: table;
+      width: 100%;
+      height: 100%;
+      span{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .icon-css-arrow{
+      position: relative;
+      margin: 0 7px;
+      top: 3px;
+    }
+  }
+  &:hover{
+    .image{
+       img{
+         transform: scale(1.15);
+         transition: transform 0.75s;
+       }
     }
   }
 }
@@ -250,5 +298,35 @@
         }
       }
     }
+  }
+}
+.slider-image-carousel{
+  margin-bottom: 30px;
+  .slick-dots{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+  }
+}
+
+//Forms
+.lined-input{
+   background-color: transparent;
+   border: 0;
+   border-bottom: 1px #fff solid !important;
+   box-shadow: none;
+   font-size: 20px;
+   .bg-primary & {
+     color: #fff;
+     @include placeholder{
+       color: #fff;
+     }
+   }
+  .text-center & {
+    text-align: center;
+  }
+  &:focus{
+     box-shadow: none;
+     background-color: transparent;
   }
 }
