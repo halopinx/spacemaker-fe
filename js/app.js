@@ -1,4 +1,4 @@
-$(function () {
+(function($) {
     //Mobile Menu
     $('#button-mobile-menu').on('click', function () {
         $('body').toggleClass('show-menu');
@@ -28,15 +28,22 @@ $(function () {
     });
 
     //Same Height
-    $('.sh').matchHeight();
+    if ($('.sh').length){
+        $('.sh').matchHeight();
+    }
 
-    //Isotope
-    $('.isotope-holder').isotope({
-        itemSelector: '.post-box',
-        layoutMode: 'fitRows',
-        fitRows: {
-            gutter: 30
+
+    //Window Scroll
+    var mobileMenuHeight = $('#site-header').outerHeight();
+
+    $(window).on('scroll', function () {
+        var y = $(window).scrollTop();
+        if (y>mobileMenuHeight){
+            $('body').addClass('fixed-menu');
+        }else{
+            if(y <= 0){
+                $('body').removeClass('fixed-menu');
+            }
         }
     })
-
-})
+})(jQuery);

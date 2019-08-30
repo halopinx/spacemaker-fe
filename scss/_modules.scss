@@ -165,6 +165,10 @@
        font-size: 36px;
        line-height: 50px;
        letter-spacing: 1.5px;
+       @include custom-breakpoint(xmedium-down){
+         font-size: 24px;
+         line-height: 34px;
+       }
      }
   }
   .more{
@@ -173,7 +177,10 @@
     }
   }
   .post-with-line-holder{
-     margin-top: 60px;
+     margin-top: 30px;
+    @include breakpoint(xmedium) {
+      margin-top: 60px;
+    }
   }
 }
 
@@ -513,18 +520,32 @@
 //Post
 .post-with-line-holder{
   border-bottom: 1px $primary-color solid;
-  padding-bottom: 20px;
+  @include breakpoint(xmedium) {
+    padding-bottom: 20px;
+  }
 }
 .post-with-line{
   border-top: 1px $primary-color solid;
   padding-top: 40px;
+  @include custom-breakpoint(xmedium-down){
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
    h3{
      font-size: 30px;
      letter-spacing: 2.15px;
+     @include custom-breakpoint(xmedium-down){
+       font-size: 24px;
+       letter-spacing: 1.17px;
+     }
    }
    p{
      line-height: 30px;
      letter-spacing: 0.6px;
+     @include custom-breakpoint(xmedium-down){
+       font-size: 14px;
+       line-height: 26px;
+     }
    }
 }
 
@@ -590,6 +611,11 @@
     font-size: 30px;
     letter-spacing: 2px;
     margin-bottom: 15px;
+    @include custom-breakpoint(xmedium-down){
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 1.7px;
+    }
   }
   .no-padding & {
      padding: 40px 0 60px 0;

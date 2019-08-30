@@ -65,7 +65,14 @@
     z-index: 20;
   }
 }
-
+.fixed-menu{
+   #site-header{
+     position: fixed;
+     left: 0;
+     right: 0;
+     animation: slideDown 0.5s;
+   }
+}
 
 //Buttons
 .button{
@@ -180,6 +187,11 @@
   }
   @include breakpoint(large) {
     padding: 95px 0 100px 0;
+  }
+  + .no-padding-top {
+    @include custom-breakpoint(xmedium-down){
+       margin-top: -40px;
+    }
   }
 }
 
@@ -302,10 +314,26 @@
 }
 .slider-image-carousel{
   margin-bottom: 30px;
+  @include custom-breakpoint(xlarge-down){
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   .slick-dots{
     text-align: center;
     margin: 0;
     padding-top: 10px;
+  }
+  @include custom-breakpoint(large-down){
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    .slick-arrow{
+      display: none !important;
+    }
+  }
+  .no-padding-top & {
+    @include custom-breakpoint(xmedium-down){
+       margin-bottom: 0;
+    }
   }
 }
 

@@ -1,8 +1,11 @@
 //Site Header
 #site-header{
   position: relative;
-  z-index: 1;
+  z-index: 2;
   background-color: $primary-color;
+  @include custom-breakpoint(large-down){
+    transition: all 0.2s;
+  }
   .main-header-holder{
     overflow: hidden;
     padding: 20px 0;
@@ -55,7 +58,7 @@
       overflow: auto;
       padding-bottom: 70px;
       top: 0;
-      margin-top: 70px;
+      margin-top: 68px;
       transition: transform 1.25s;
       transform: translate3d(0, -150%, 0);
       background: rgba(0,0,0, 0.7);
@@ -247,26 +250,28 @@
   .top-page{
     padding-top: 30px;
     position: relative;
+    background-color: $secondary-color;
     @include breakpoint(xmedium) {
       padding-top: 40px;
     }
     @include breakpoint(large) {
       padding-top: 80px;
     }
+    .content-holder{
+      position: relative;
+      z-index: 1;
+    }
     &:after{
       content: '';
       position: absolute;
-      top: 0;
       left: 0;
       right: 0;
-      bottom: 35%;
-      z-index: -1;
-      background-color: $secondary-color;
-      @include breakpoint(xmedium) {
-        bottom: 20%;
-      }
-      @include breakpoint(large) {
-         bottom: 100px;
+      bottom: 0;
+      z-index: 0;
+      height: 100px;
+      background-color: #fff;
+      @include custom-breakpoint(xmedium-down){
+         height: 50px;
       }
     }
     h1{
@@ -293,10 +298,23 @@
     p{
       letter-spacing: 1.14px;
       font-family: "Dinot Regular";
+      margin-bottom: 30px;
+      @include custom-breakpoint(xmedium-down){
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
     h1{
-      text-align: right;
-      line-height: 1;
+      text-align: center;
+      @include breakpoint(xmedium) {
+        text-align: right;
+        line-height: 1;
+      }
+    }
+  }
+  .overview-image{
+    @include custom-breakpoint(xmedium-down){
+      margin-bottom: 30px;
     }
   }
 }
