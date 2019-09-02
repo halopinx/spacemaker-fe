@@ -71,6 +71,15 @@
      left: 0;
      right: 0;
      animation: slideDown 0.5s;
+     z-index: 999999;
+     &.homepage-site-header{
+       position: fixed;
+       left: 0;
+       right: 0;
+       animation: slideDown 0.5s;
+       z-index: 999999;
+       background-color: $primary-color;
+     }
    }
 }
 

@@ -17,7 +17,10 @@
 
 //Custom Breakpoint
 @mixin custom-breakpoint($class) {
-  @if $class == small-down {
+  @if $class == small-up {
+    @media only screen and (min-width: 480px) { @content; }
+  }
+  @else if $class == small-down {
     @media only screen and (max-width: 479px) { @content; }
   }
   @else if $class == medium-down {

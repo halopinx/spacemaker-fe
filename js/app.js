@@ -32,6 +32,13 @@
         $('.sh').matchHeight();
     }
 
+    //Featherlight
+    if($('[data-featherlight]').length){
+        $('[data-featherlight]').featherlight({
+            loading: 'Loading.....',
+            closeOnEsc: true
+        });
+    }
 
     //Window Scroll
     var mobileMenuHeight = $('#site-header').outerHeight();
