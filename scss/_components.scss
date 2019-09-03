@@ -99,10 +99,6 @@
       font-size: 14px;
     }
   }
-  &:hover{
-    background-color: transparent;
-    color: $primary-color;
-  }
   &:after{
     content: '';
     height: 3px;
@@ -111,6 +107,32 @@
     left: 0;
     right: 0;
     bottom: -8px;
+    transition: all 0.2s;
+  }
+  &:before{
+    content: attr(title);
+    position: absolute;
+    font-family: $font-bold;
+    letter-spacing: -0.25px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  span{
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+  &:hover{
+    background-color: transparent;
+    color: $primary-color;
+    &:after{
+      height: 5px;
+    }
+    &:before{
+      opacity: 1;
+    }
+    span{
+      opacity: 0;
+    }
   }
   &.primary{
     background-color: transparent;
