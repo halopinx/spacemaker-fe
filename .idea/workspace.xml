@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8833680c-3a45-4445-989d-f4a55bda213c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/project-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_modules.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_modules.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="135" column="83" selection-start-line="135" selection-start-column="83" selection-end-line="135" selection-end-column="83" />
+            <state relative-caret-position="249">
+              <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+              <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#11710#11716#0" expanded="true" />
@@ -49,8 +49,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_modules.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="622" column="20" selection-start-line="622" selection-start-column="20" selection-end-line="622" selection-end-column="20" />
+            <state relative-caret-position="453">
+              <caret line="453" column="30" selection-start-line="453" selection-start-column="30" selection-end-line="453" selection-end-column="30" />
+              <folding>
+                <element signature="e#8600#9015#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>iso-box</find>
       <find>.slider-carousel</find>
       <find>icon-q</find>
       <find>Slider</find>
@@ -142,10 +144,11 @@
       <find>butto</find>
       <find>.form-b</find>
       <find>.button</find>
-      <find>.form</find>
-      <find>button</find>
       <find>media-button</find>
       <find>lined-input</find>
+      <find>.form</find>
+      <find>post-box</find>
+      <find>button</find>
     </findStrings>
     <replaceStrings>
       <replace>award-hia.svg</replace>
@@ -173,9 +176,9 @@
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/featherlight/featherlight.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/project.html" />
         <option value="$PROJECT_DIR$/project-detail.html" />
         <option value="$PROJECT_DIR$/scss/_components.scss" />
+        <option value="$PROJECT_DIR$/project.html" />
         <option value="$PROJECT_DIR$/scss/_modules.scss" />
       </list>
     </option>
@@ -263,13 +266,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71390000" />
+    <option name="totallyTimeSpent" value="72489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25596184" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25596184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -285,7 +288,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32931727" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32931727" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -452,17 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="135" column="83" selection-start-line="135" selection-start-column="83" selection-end-line="135" selection-end-column="83" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#11710#11716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -487,10 +479,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="57" column="28" lean-forward="true" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11710#11716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scss/_modules.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="622" column="20" selection-start-line="622" selection-start-column="20" selection-end-line="622" selection-end-column="20" />
+        <state relative-caret-position="453">
+          <caret line="453" column="30" selection-start-line="453" selection-start-column="30" selection-end-line="453" selection-end-column="30" />
+          <folding>
+            <element signature="e#8600#9015#0" />
+          </folding>
         </state>
       </provider>
     </entry>
