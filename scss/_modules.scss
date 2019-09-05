@@ -619,11 +619,19 @@
   }
   .no-padding & {
      padding: 40px 0 60px 0;
-     max-width: 870px;
+     max-width: 960px;
      margin: 0 auto;
-     .lined-input{
-       max-width: 670px;
-       margin: 0 auto;
-     }
+  }
+  .button{
+    display: block;
+    padding: 18px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    @include custom-breakpoint(xmedium-down){
+      width: 100%;
+    }
+    &:only-child{
+      margin-bottom: 0;
+    }
   }
 }
