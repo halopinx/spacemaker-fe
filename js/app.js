@@ -1,11 +1,19 @@
-(function($) {
+//JS SCRIPTS
+(function () {
+    var domElements = {
+        mobileMenuBtnID: 'button-mobile-menu'
+    }
     //Mobile Menu
-    $('#button-mobile-menu').on('click', function () {
-        $('body').toggleClass('show-menu');
-        $(this).toggleClass('active');
+    var mobileMenuBtn = document.getElementById(domElements.mobileMenuBtnID);
+    mobileMenuBtn.addEventListener('click', function () {
+        this.classList.toggle('active');
+        document.body.classList.toggle('show-menu');
     })
 
+})();
 
+//JQUERY
+(function($) {
     //Sliders
     $('.slider-banner').slick({
         fade: true,
